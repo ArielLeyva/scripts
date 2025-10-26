@@ -1525,6 +1525,12 @@ function stock_menu() {
 				&& ("$isCmlBook" = false || "$device" == "drallion") ) ]]; then
 			flash_rwlegacy
 		elif [[ "$isEOL" = "true" ]]; then
+			echo_red "$unlockMenu"
+			echo_red "$isFullRom"
+			echo_red "$isStock"
+			echo_red "$isUnsupported"
+			echo_red "$isCmlBook"
+			echo_red "$device"
 			echo_red "The RW_LEGACY firmware update is not supported for devices which have reached end-of-life"
 			read -rep "Press enter to return to the main menu"
 		fi
