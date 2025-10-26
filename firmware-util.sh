@@ -12,6 +12,7 @@
 #
 
 # shellcheck disable=SC2164
+echo "Versión modificada: 2025-10-26"
 
 #path to directory where script is saved
 script_dir="$(dirname "$(readlink -f "$0")")"
