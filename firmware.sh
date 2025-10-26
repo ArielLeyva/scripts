@@ -1522,7 +1522,7 @@ function stock_menu() {
 	case $opt in
 
 	1)	if [[ "$unlockMenu" = true || ( "$isFullRom" = false && "$isStock" = true && "$isUnsupported" = false \
-				&& ("$isCmlBook" = false || "$device" == "drallion") && "$isEOL" = false ) ]]; then
+				&& ("$isCmlBook" = false || "$device" == "drallion") ) ]]; then
 			flash_rwlegacy
 		elif [[ "$isEOL" = "true" ]]; then
 			echo_red "The RW_LEGACY firmware update is not supported for devices which have reached end-of-life"
